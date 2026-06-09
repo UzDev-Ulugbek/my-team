@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,48 +15,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
       </head> -->
-      <body>
-        <section class="section__clients">
-          <div class="container">
-            <div class="section__clients--wrapper">
-              <div class="clients__wrapper">
-                <div class="section__clients--left">
-                  <div class="clients__left--left">
-                    <p class="clients__left--text">About</p>
-                  </div>
-                </div>
-                <div class="section__clients--right">
-                  <p class="client__right--topborder"></p>
-                  <p class="clients__right--right">
-                    We help companies build dynamic teams made up of top global
-                    talent. Using our network of passionate professionals we
-                    drive innovation and deliver incredible outcomes. Talented,
-                    diverse teams shape the best products and experiences. We’ll
-                    bring those teams to you.
-                  </p>
-                </div>
+    <header class="site__header">
+      <div class="container">
+        <div class="site__header-wrapper">
+          <img
+            src="./assets/images/myteam-logo.png"
+            alt=""
+            class="site__header-img"
+          />
+          <div class="site__header-navbar">
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="menu"
+              ><i class="fa-solid fa-bars"></i
+            ></label>
+            <div class="navbar-wrapper">
+              <label for="menu" class="menu"
+                ><i class="fa-solid fa-xmark"></i
+              ></label>
+
+              <ul class="navbar-list">
+                <li class="navbar-list-item">
+                  <a href="./index.html" class="navbar-list-link">home</a>
+                </li>
+                <li class="navbar-list-item">
+                  <a href="./about.html" class="navbar-list-link">about</a>
+                </li>
+              </ul>
+              <a href="./contact.html" class="navbar-btn-link navbar-link">
+                <button class="navbar-btn" type="button">contact us</button>
+              </a>
+              <img
+                src="./assets/images/background right 2.png"
+                alt="navbar-img"
+                class="navbar-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__clients">
+      <div class="container">
+        <div class="section__clients--wrapper">
+          <div class="clients__wrapper">
+            <div class="section__clients--left">
+              <div class="clients__left--left">
+                <p class="clients__left--text">About</p>
               </div>
             </div>
-          </div>
-          <img
-            class="client__right--img"
-            src="./assets/images/background right 2.png"
-            alt=""
-          />
-        </section>
-        <section class="section__links">
-          <div class="container">
-            <p class="section__links--header">Some of our clients</p>
-            <div class="section__links--link-img">
-              <img class="link__img--img" src="./assets/images/client 1.png" alt="">
-              <img class="link__img--img" src="./assets/images/client 2.png" alt="">
-              <img class="link__img--img" src="./assets/images/client 3.png" alt="">
-              <img class="link__img--img" src="./assets/images/client 4.png" alt="">
-              <img class="link__img--img" src="./assets/images/client 5.png" alt="">
+            <div class="section__clients--right">
+              <p class="client__right--topborder"></p>
+              <p class="clients__right--right">
+                We help companies build dynamic teams made up of top global
+                talent. Using our network of passionate professionals we drive
+                innovation and deliver incredible outcomes. Talented, diverse
+                teams shape the best products and experiences. We’ll bring those
+                teams to you.
+              </p>
             </div>
           </div>
-        </section>
-      </body>
-    </html>
+        </div>
+      </div>
+      <img
+        class="client__right--img"
+        src="./assets/images/background right 2.png"
+        alt=""
+      />
+    </section>
+    <section class="section__links">
+      <div class="container">
+        <p class="section__links--header">Some of our clients</p>
+        <div class="section__links--link-img">
+          <img
+            class="link__img--img"
+            src="./assets/images/client 1.png"
+            alt=""
+          />
+          <img
+            class="link__img--img"
+            src="./assets/images/client 2.png"
+            alt=""
+          />
+          <img
+            class="link__img--img"
+            src="./assets/images/client 3.png"
+            alt=""
+          />
+          <img
+            class="link__img--img"
+            src="./assets/images/client 4.png"
+            alt=""
+          />
+          <img
+            class="link__img--img"
+            src="./assets/images/client 5.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
