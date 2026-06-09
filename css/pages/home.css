@@ -231,6 +231,7 @@
   .section__two--wrapper-right {
     text-align: start;
   }
+  
   .wrapper__right--box {
     display: flex;
     gap: 23px;
