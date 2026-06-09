@@ -23,7 +23,7 @@
 body {
   overflow-x: hidden;
   font-family: "Livvic";
-}
+ background-color: #014e56;}
 a {
   text-decoration: none;
 }
@@ -39,4 +39,193 @@ button {
   width: 100%;
   margin: 0 auto;
   padding-inline: 20px;
+}
+@import url("./base/normalize.css");
+@import url("./base/variables.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/footer.css");
+@import url("./components/navbar.css");
+@import url("./pages/about.css");
+@import url("./pages/contact.css");
+@import url("./pages/home.css");
+/* livvic-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/livvic-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+/* SECTION */
+.team {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+/* TITLE */
+.team h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* LIST */
+.team-list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* CARD SIZE */
+.flip-card {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* FLIP */
+.flip-inner {
+  position: relative;
+  height: 250px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner,
+.flip-card:focus-within .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #012F34;
+  padding: 20px;
+  backface-visibility: hidden;
+  
+}
+
+/* FRONT */
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front figure {
+  text-align: center;
+}
+
+.front img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #79c8c7;
+  margin-bottom: 12px;
+}
+
+.front h3 {
+  font-size: 16px;
+  color: #79c8c7;
+}
+
+.front p {
+  font-size: 13px;
+}
+
+/* BACK */
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #012f34;
+  font-size: 13px;
+  padding: 15px;
+}
+
+/* ========================= */
+/* 📱 MOBILE (default) */
+/* 1 ta card per row */
+/* ========================= */
+.team-list {
+  grid-template-columns: 1fr;
+}
+
+/* ========================= */
+/* 📲 TABLET (600px) */
+/* 2 ta card */
+/* ========================= */
+@media (min-width: 600px) {
+  .team {
+    padding: 50px 20px;
+  }
+
+  .team h2 {
+    font-size: 26px;
+  }
+
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .flip-card {
+    max-width: 300px;
+  }
+}
+
+/* ========================= */
+/* 💻 DESKTOP (900px) */
+/* 3 ta card */
+/* ========================= */
+@media (min-width: 900px) {
+  .team {
+    padding: 60px 20px;
+  }
+
+  .team h2 {
+    font-size: 32px;
+  }
+
+  .team-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .flip-card {
+    max-width: 320px;
+  background-color: #012f34;
+  }
+}
+.section-title-h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  display: flex; justify-content: center;
+
+}
+/* ========================= */
+/* 🖥 LARGE (1200px+) */
+/* kengroq spacing */
+/* ========================= */
+@media (min-width: 1200px) {
+  .team-list {
+    gap: 40px;
+  }
+
+}
+.section-three--img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
